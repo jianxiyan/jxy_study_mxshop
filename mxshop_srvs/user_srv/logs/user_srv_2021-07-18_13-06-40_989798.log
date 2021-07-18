@@ -1,0 +1,129 @@
+2021-07-18 13:06:41.016 | INFO     | __main__:serve:63 - 启动服务：127.0.0.1:8091
+2021-07-18 13:14:43.180 | ERROR    | grpc._server:_call_behavior:444 - An error has been caught in function '_call_behavior', process 'MainProcess' (94216), thread 'ThreadPoolExecutor-0_0' (123145420865536):
+Traceback (most recent call last):
+
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x1035840d0>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x103581dc0>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+    │    │        │    └ (<weakref at 0x105491540; to 'ThreadPoolExecutor' at 0x105450280>, <_queue.SimpleQueue object at 0x1053f9f90>, None, ())
+    │    │        └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+    │    └ <function _worker at 0x10545ff70>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/concurrent/futures/thread.py", line 80, in _worker
+    work_item.run()
+    │         └ <function _WorkItem.run at 0x10545c0d0>
+    └ <concurrent.futures.thread._WorkItem object at 0x105488fa0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │    │   │    │       │    └ {}
+             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0x105488fa0>
+             │    │   │    └ [<grpc._cython.cygrpc.RequestCallEvent object at 0x1054910e0>, <grpc._server._RPCState object at 0x105488df0>, <bound method ...
+             │    │   └ <concurrent.futures.thread._WorkItem object at 0x105488fa0>
+             │    └ <function _unary_response_in_pool at 0x105486700>
+             └ <concurrent.futures.thread._WorkItem object at 0x105488fa0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/grpc/_server.py", line 561, in _unary_response_in_pool
+    response, proceed = _call_behavior(rpc_event, state, behavior,
+                        │              │          │      └ <bound method UserServicer.GetUserList of <user_srv.handler.user.UserServicer object at 0x105468160>>
+                        │              │          └ <grpc._server._RPCState object at 0x105488df0>
+                        │              └ <grpc._cython.cygrpc.RequestCallEvent object at 0x1054910e0>
+                        └ <function _call_behavior at 0x105486310>
+> File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           │        │         └ <grpc._server._Context object at 0x1054943a0>
+                           │        └ pSize: 10
+                           │          
+                           └ <bound method UserServicer.GetUserList of <user_srv.handler.user.UserServicer object at 0x105468160>>
+
+  File "/Users/jianxiyan/home/练习/go_python/mxshop/mxshop_srvs/user_srv/handler/user.py", line 52, in GetUserList
+    rsp.data.append(self.convert_user_to_rsp(user))
+    │   │           │    │                   └ <User: 1>
+    │   │           │    └ <function UserServicer.convert_user_to_rsp at 0x10501e1f0>
+    │   │           └ <user_srv.handler.user.UserServicer object at 0x105468160>
+    │   └ <field property 'UserListResponse.data'>
+    └ total: 11
+
+  File "/Users/jianxiyan/home/练习/go_python/mxshop/mxshop_srvs/user_srv/handler/user.py", line 30, in convert_user_to_rsp
+    user_info_rsp.birthDay = int(time.mktime(user.birthday.timetuple()))
+    │                            │    │      │    └ <peewee.FieldAccessor object at 0x10544b040>
+    │                            │    │      └ <User: 1>
+    │                            │    └ <built-in function mktime>
+    │                            └ <module 'time' (built-in)>
+    └ id: 1
+      password: "$pbkdf2-sha256$29000$d45RqlXq3dv7PweAsNY6xw$vxT290H3kIK/ELtrz01nhrFkmATvbnKHcdLOLLjOGhk"
+      mobile: "1878222222...
+
+AttributeError: 'UserInfoResponse' object has no attribute 'birthDay'
+2021-07-18 13:15:10.866 | ERROR    | grpc._server:_call_behavior:444 - An error has been caught in function '_call_behavior', process 'MainProcess' (94216), thread 'ThreadPoolExecutor-0_0' (123145420865536):
+Traceback (most recent call last):
+
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x1035840d0>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x103581dc0>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+    │    │        │    └ (<weakref at 0x105491540; to 'ThreadPoolExecutor' at 0x105450280>, <_queue.SimpleQueue object at 0x1053f9f90>, None, ())
+    │    │        └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+    │    └ <function _worker at 0x10545ff70>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145420865536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/concurrent/futures/thread.py", line 80, in _worker
+    work_item.run()
+    │         └ <function _WorkItem.run at 0x10545c0d0>
+    └ <concurrent.futures.thread._WorkItem object at 0x1054944f0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │    │   │    │       │    └ {}
+             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0x1054944f0>
+             │    │   │    └ [<grpc._cython.cygrpc.RequestCallEvent object at 0x105491900>, <grpc._server._RPCState object at 0x105494340>, <bound method ...
+             │    │   └ <concurrent.futures.thread._WorkItem object at 0x1054944f0>
+             │    └ <function _unary_response_in_pool at 0x105486700>
+             └ <concurrent.futures.thread._WorkItem object at 0x1054944f0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/grpc/_server.py", line 561, in _unary_response_in_pool
+    response, proceed = _call_behavior(rpc_event, state, behavior,
+                        │              │          │      └ <bound method UserServicer.GetUserList of <user_srv.handler.user.UserServicer object at 0x105468160>>
+                        │              │          └ <grpc._server._RPCState object at 0x105494340>
+                        │              └ <grpc._cython.cygrpc.RequestCallEvent object at 0x105491900>
+                        └ <function _call_behavior at 0x105486310>
+> File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           │        │         └ <grpc._server._Context object at 0x1054944c0>
+                           │        └ pn: 1
+                           │          pSize: 10
+                           │          
+                           └ <bound method UserServicer.GetUserList of <user_srv.handler.user.UserServicer object at 0x105468160>>
+
+  File "/Users/jianxiyan/home/练习/go_python/mxshop/mxshop_srvs/user_srv/handler/user.py", line 52, in GetUserList
+    rsp.data.append(self.convert_user_to_rsp(user))
+    │   │           │    │                   └ <User: 1>
+    │   │           │    └ <function UserServicer.convert_user_to_rsp at 0x10501e1f0>
+    │   │           └ <user_srv.handler.user.UserServicer object at 0x105468160>
+    │   └ <field property 'UserListResponse.data'>
+    └ total: 11
+
+  File "/Users/jianxiyan/home/练习/go_python/mxshop/mxshop_srvs/user_srv/handler/user.py", line 30, in convert_user_to_rsp
+    user_info_rsp.birthDay = int(time.mktime(user.birthday.timetuple()))
+    │                            │    │      │    └ <peewee.FieldAccessor object at 0x10544b040>
+    │                            │    │      └ <User: 1>
+    │                            │    └ <built-in function mktime>
+    │                            └ <module 'time' (built-in)>
+    └ id: 1
+      password: "$pbkdf2-sha256$29000$d45RqlXq3dv7PweAsNY6xw$vxT290H3kIK/ELtrz01nhrFkmATvbnKHcdLOLLjOGhk"
+      mobile: "1878222222...
+
+AttributeError: 'UserInfoResponse' object has no attribute 'birthDay'
+2021-07-18 20:42:31.660 | INFO     | __main__:on_exit:20 - 注销成功f01ef726-e785-11eb-af15-acde48001122
