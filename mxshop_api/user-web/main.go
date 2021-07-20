@@ -16,7 +16,9 @@ func main() {
 	//3. 初始化router
 	Router := initialize.Routers()
 	//4. 初始化翻译
-
+	if err := initialize.InitTrans("zh"); err != nil {
+		panic(err)
+	}
 	//5. 初始化srv链接
 	initialize.InitSrvConn()
 

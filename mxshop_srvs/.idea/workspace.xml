@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54624868-532c-46ee-99fa-d80a95cdcd2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user_srv/handler/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_17-16-57_241716.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-10-23_299132.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-20-25_660061.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-23-06_729818.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-23-49_574946.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-24-53_143413.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-26-16_347017.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-28-05_614151.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-43-44_729038.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-45-36_304562.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-47-06_185661.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-48-17_658579.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-51-20_576066.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-54-31_564523.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-06-37_731678.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-13-02_923869.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-16-30_915482.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-34-00_476180.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-36-35_811340.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-53-44_954599.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-54-45_122234.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-56-04_014301.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-56-23_152797.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-56-45_924918.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-58-15_913848.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-59-10_912359.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-59-41_086544.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-03-53_100328.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-04-16_984735.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-04-31_069396.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-05-34_225704.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_13-06-40_989798.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_20-42-32_982704.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_20-46-48_519698.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/model/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/proto/user.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/proto/user_pb2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/proto/user_pb2_grpc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/settings/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_srv/tests/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mxshop_srvs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mxshop_srvs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_21-06-51_260318.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -183,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.user" />
         <item itemvalue="Python.server" />
+        <item itemvalue="Python.user" />
         <item itemvalue="Python.user (1)" />
         <item itemvalue="Python.models" />
       </list>
@@ -205,7 +162,7 @@
       <workItem from="1626486898008" duration="118000" />
       <workItem from="1626487033662" duration="203000" />
       <workItem from="1626488929136" duration="1498000" />
-      <workItem from="1626490442185" duration="19779000" />
+      <workItem from="1626490442185" duration="20420000" />
     </task>
     <servers />
   </component>
@@ -230,8 +187,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mxshop_srvs$user__1_.coverage" NAME="user (1) Coverage Results" MODIFIED="1626523974523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/handler" />
-    <SUITE FILE_PATH="coverage/mxshop_srvs$server.coverage" NAME="server Coverage Results" MODIFIED="1626612408114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv" />
     <SUITE FILE_PATH="coverage/mxshop_srvs$user.coverage" NAME="user Coverage Results" MODIFIED="1626612425585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/tests" />
+    <SUITE FILE_PATH="coverage/mxshop_srvs$server.coverage" NAME="server Coverage Results" MODIFIED="1626613610740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv" />
     <SUITE FILE_PATH="coverage/mxshop_srvs$models.coverage" NAME="models Coverage Results" MODIFIED="1626520678738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/model" />
   </component>
 </project>

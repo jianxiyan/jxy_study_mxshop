@@ -73,5 +73,9 @@ func GetUserList(ctx *gin.Context) {
 		}
 		result = append(result, user)
 	}
-	ctx.JSON(http.StatusOK, result)
+	data := map[string]interface{}{
+		"total": rsp.Total,
+		"data":  result,
+	}
+	ctx.JSON(http.StatusOK, data)
 }
