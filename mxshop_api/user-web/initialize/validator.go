@@ -18,6 +18,7 @@ import (
 )
 
 func InitTrans(locale string) (err error) {
+
 	//修改gin框架的validator引擎属性，实现定制
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
 		//注册一个获取json的tag的自定义方法
@@ -46,23 +47,24 @@ func InitTrans(locale string) (err error) {
 		default:
 			en_translations.RegisterDefaultTranslations(v, global.Trans)
 		}
+
+		//初始化自定义验证
+		err = InitMyValidator(v)
 		return
 	}
-	err = InitMyValidator()
 	return
 }
 
 //初始化自定义验证
-func InitMyValidator() (err error) {
-	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
-		err = v.RegisterValidation("mobile", myvalidator.ValidateMobile)
-		err = v.RegisterTranslation("mobile", global.Trans, func(ut ut.Translator) error {
-			return ut.Add("mobile", "{0} 非法的手机号码！", true)
-		}, func(ut ut.Translator, fe validator.FieldError) string {
-			var t string
-			t, err = ut.T("mobile", fe.Field())
-			return t
-		})
-	}
+func InitMyValidator(v *validator.Validate) (err error) {
+	err = v.RegisterValidation("mobile", myvalidator.ValidateMobile)
+	err = v.RegisterTranslation("mobile", global.Trans, func(ut ut.Translator) error {
+		return ut.Add("mobile", "{0} 非法的手机号码！", true)
+	}, func(ut ut.Translator, fe validator.FieldError) string {
+		var t string
+		t, err = ut.T("mobile", fe.Field())
+		fmt.Println(t)
+		return t
+	})
 	return
 }
