@@ -5,3 +5,6 @@ user_srv:
   host: "127.0.0.1"
   port: 8091
   name: "user_srv"
+
+jwt:
+  key: "asdfafe1231daffe"

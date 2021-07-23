@@ -115,4 +115,4 @@ class UserServicer(user_pb2_grpc.UserServicer):
 
     @logger.catch
     def CheckPassword(self, request: user_pb2.PasswordCheckInfo, context):
-        pass
+        return user_pb2.CheckResponse(success=pbkdf2_sha256.verify(request.password, request.encryptedPassword))

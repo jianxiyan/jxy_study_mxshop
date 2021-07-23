@@ -1,7 +1,7 @@
 import time
 
 import grpc
-
+from passlib.handlers.pbkdf2 import pbkdf2_sha256
 from user_srv.proto import user_pb2_grpc, user_pb2
 
 
@@ -36,9 +36,14 @@ class UserTest:
         user = self.stub.UpdateUser(user_pb2.UpdateUserInfo(id=id, gender=gender, nickName=nick_name, birthday=birthday))
         print(user)
 
+    def check_password(self, password, encrypted_password):
+        user = self.stub.CheckPassword(user_pb2.PasswordCheckInfo(password=password, encryptedPassword=encrypted_password))
+        print(user)
+
 if __name__ == "__main__":
     user = UserTest()
-    user.user_list()
+    # user.user_list()
+    user.check_password('admin123', pbkdf2_sha256.hash('admin123'))
     # user.get_user_by_id(2)
     # user.get_user_by_mobile("18782222221")
     # user.create_user(nick_name='boby1', mobile='1823491371', password='123456')

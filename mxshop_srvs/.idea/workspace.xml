@@ -2,46 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54624868-532c-46ee-99fa-d80a95cdcd2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-23_08-22-42_613443.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/api/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/api/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/validator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/router/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/router/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/config-pro.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/config-pro.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_17-16-57_241716.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-10-23_299132.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-20-25_660061.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-23-06_729818.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-23-49_574946.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-24-53_143413.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-26-16_347017.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-28-05_614151.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-43-44_729038.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-45-36_304562.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-47-06_185661.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-48-17_658579.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-51-20_576066.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_19-54-31_564523.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-06-37_731678.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-13-02_923869.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-16-30_915482.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-34-00_476180.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-36-35_811340.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-53-24_082383.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-53-44_954599.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-54-45_122234.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-56-04_014301.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-56-23_152797.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-56-45_924918.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-58-15_913848.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-59-10_912359.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_20-59-41_086544.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-03-53_100328.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-04-16_984735.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-04-31_069396.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-17_21-05-34_225704.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_13-06-40_989798.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_20-42-32_982704.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_20-46-48_519698.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-18_21-06-51_260318.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_srv/handler/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_srv/handler/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_srv/tests/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_srv/tests/user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server">
+  <component name="RunManager" selected="Python.user">
     <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mxshop_srvs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.server" />
         <item itemvalue="Python.user" />
+        <item itemvalue="Python.server" />
         <item itemvalue="Python.user (1)" />
         <item itemvalue="Python.models" />
       </list>
@@ -201,7 +170,7 @@
       <workItem from="1626487033662" duration="203000" />
       <workItem from="1626488929136" duration="1498000" />
       <workItem from="1626490442185" duration="20602000" />
-      <workItem from="1626698613612" duration="1416000" />
+      <workItem from="1626698613612" duration="2585000" />
     </task>
     <servers />
   </component>
@@ -226,8 +195,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mxshop_srvs$user__1_.coverage" NAME="user (1) Coverage Results" MODIFIED="1626523974523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/handler" />
-    <SUITE FILE_PATH="coverage/mxshop_srvs$user.coverage" NAME="user Coverage Results" MODIFIED="1626612425585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/tests" />
-    <SUITE FILE_PATH="coverage/mxshop_srvs$server.coverage" NAME="server Coverage Results" MODIFIED="1626874913973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv" />
+    <SUITE FILE_PATH="coverage/mxshop_srvs$server.coverage" NAME="server Coverage Results" MODIFIED="1626999762027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv" />
+    <SUITE FILE_PATH="coverage/mxshop_srvs$user.coverage" NAME="user Coverage Results" MODIFIED="1627000317852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/tests" />
     <SUITE FILE_PATH="coverage/mxshop_srvs$models.coverage" NAME="models Coverage Results" MODIFIED="1626520678738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/model" />
   </component>
 </project>

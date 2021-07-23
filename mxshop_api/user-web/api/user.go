@@ -68,7 +68,6 @@ func HandleValidatorError(c *gin.Context, err error) {
 	c.JSON(http.StatusBadRequest, gin.H{
 		"error": removeTopStruct(errs.Translate(global.Trans)),
 	})
-	return
 }
 
 func GetUserList(ctx *gin.Context) {
