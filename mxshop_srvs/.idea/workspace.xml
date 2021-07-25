@@ -2,15 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54624868-532c-46ee-99fa-d80a95cdcd2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-23_08-22-42_613443.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/grpc_health/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/grpc_health/v1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/grpc_health/v1/_async.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/grpc_health/v1/health.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/grpc_health/v1/health_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/grpc_health/v1/health_pb2_grpc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/register/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/register/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/register/consul.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/utils/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-24_17-54-54_174171.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_08-51-07_278882.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_08-53-00_726628.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_08-56-00_928304.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_08-58-13_467421.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_09-02-05_456073.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_09-03-23_837821.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_09-04-29_890135.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_14-18-18_264003.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_15-28-45_228220.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_15-51-57_312143.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_15-56-25_927254.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_srv/logs/user_srv_2021-07-25_16-02-54_478498.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mxshop_api/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mxshop_api/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/api/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/api/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/config-pro.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/config-pro.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/srv_conn.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/initialize/srv_conn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/middlewares/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/middlewares/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mxshop_api/user-web/router/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../mxshop_api/user-web/router/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/handler/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_srv/handler/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_srv/tests/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_srv/tests/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_srv/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_srv/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_srv/settings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_srv/settings/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +65,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,6 +73,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -147,8 +182,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.user" />
         <item itemvalue="Python.server" />
+        <item itemvalue="Python.user" />
         <item itemvalue="Python.user (1)" />
         <item itemvalue="Python.models" />
       </list>
@@ -170,7 +205,7 @@
       <workItem from="1626487033662" duration="203000" />
       <workItem from="1626488929136" duration="1498000" />
       <workItem from="1626490442185" duration="20602000" />
-      <workItem from="1626698613612" duration="2585000" />
+      <workItem from="1626698613612" duration="8443000" />
     </task>
     <servers />
   </component>
@@ -195,8 +230,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mxshop_srvs$user__1_.coverage" NAME="user (1) Coverage Results" MODIFIED="1626523974523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/handler" />
-    <SUITE FILE_PATH="coverage/mxshop_srvs$server.coverage" NAME="server Coverage Results" MODIFIED="1626999762027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv" />
     <SUITE FILE_PATH="coverage/mxshop_srvs$user.coverage" NAME="user Coverage Results" MODIFIED="1627000317852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/tests" />
+    <SUITE FILE_PATH="coverage/mxshop_srvs$server.coverage" NAME="server Coverage Results" MODIFIED="1627199516779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv" />
     <SUITE FILE_PATH="coverage/mxshop_srvs$models.coverage" NAME="models Coverage Results" MODIFIED="1626520678738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_srv/model" />
   </component>
 </project>

@@ -26,10 +26,18 @@ data = {
         "password":"jianxiyan."
     },
     "consul":{
-        "host":"192.168.0.104",
+        "host":"127.0.0.1",
         "port":8500
     }
 }
+
+# consul的配置
+CONSUL_HOST = data["consul"]["host"]
+CONSUL_PORT = data["consul"]["port"]
+
+# 服务相关的配置
+SERVICE_NAME = data["name"]
+SERVICE_TAGS = data["tags"]
 
 DB = ReconnectMysqlDatabase(data["mysql"]["db"], host=data["mysql"]["host"], port=data["mysql"]["port"],
                             user=data["mysql"]["user"], password=data["mysql"]["password"])

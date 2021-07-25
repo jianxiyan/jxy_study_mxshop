@@ -1,10 +1,24 @@
 name: "user-web"
 host: "127.0.0.1"
 port: 8092
+
 user_srv:
   host: "127.0.0.1"
   port: 8091
-  name: "user_srv"
+  name: "user-srv"
 
 jwt:
-  key: "asdfafe1231daffe"
+  key: "4C!ZpThM$0JDSB2VSZDYtYIZ^Q5G8DgK"
+
+redis:
+  host: "127.0.0.1"
+  port: 37291
+  expire: 300
+
+sms:
+  key: "123"
+  secrect: "123"
+
+consul:
+  host: "127.0.0.1"
+  port: 8500

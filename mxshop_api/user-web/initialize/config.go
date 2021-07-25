@@ -2,24 +2,20 @@ package initialize
 
 import (
 	"fmt"
-	"mxshop_api/user-web/global"
 
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
+
+	"mxshop_api/user-web/global"
+	"mxshop_api/user-web/utils"
 )
 
-//根据环境来判断使用那个配置文件
-func GetEnvInfo(env string) bool {
-	viper.AutomaticEnv()
-	return viper.GetBool(env)
-	//重启ide才生效
-}
-
 func InitConfig() {
-	debug := GetEnvInfo("MXSHOP_DEBUG")
+	//根据环境来判断使用那个配置文件
+	debug := utils.GetEnvInfo()
 	configFilePrefix := "config"
 	configFileName := fmt.Sprintf("user-web/%s-pro.yaml", configFilePrefix)
-	if debug {
+	if !debug {
 		configFileName = fmt.Sprintf("user-web/%s-debug.yaml", configFilePrefix)
 	}
 

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"mxshop_api/user-web/global"
 	"mxshop_api/user-web/initialize"
+	"mxshop_api/user-web/utils"
 
 	"go.uber.org/zap"
 )
@@ -21,6 +22,14 @@ func main() {
 	}
 	//5. 初始化srv链接
 	initialize.InitSrvConn()
+
+	debug := utils.GetEnvInfo()
+	if !debug {
+		port, err := utils.GetFreePort()
+		if err == nil {
+			global.ServerConfig.Port = port
+		}
+	}
 
 	/*
 		1. S()可以获取一个全局的sugar，可以让我们自己设置一个全局的logger

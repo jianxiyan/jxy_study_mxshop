@@ -1,0 +1,158 @@
+2021-07-24 17:54:54.205 | INFO     | __main__:serve:63 - 启动服务：127.0.0.1:8091
+2021-07-24 18:13:29.803 | ERROR    | grpc._server:_call_behavior:444 - An error has been caught in function '_call_behavior', process 'MainProcess' (35503), thread 'ThreadPoolExecutor-0_0' (123145346625536):
+Traceback (most recent call last):
+
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x10b8300d0>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145346625536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x10b82ddc0>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145346625536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145346625536)>
+    │    │        │    └ (<weakref at 0x10d73b590; to 'ThreadPoolExecutor' at 0x10d6fb310>, <_queue.SimpleQueue object at 0x10d701130>, None, ())
+    │    │        └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145346625536)>
+    │    └ <function _worker at 0x10d70af70>
+    └ <Thread(ThreadPoolExecutor-0_0, started daemon 123145346625536)>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/concurrent/futures/thread.py", line 80, in _worker
+    work_item.run()
+    │         └ <function _WorkItem.run at 0x10d7070d0>
+    └ <concurrent.futures.thread._WorkItem object at 0x10d733af0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │    │   │    │       │    └ {}
+             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0x10d733af0>
+             │    │   │    └ [<grpc._cython.cygrpc.RequestCallEvent object at 0x10d73b130>, <grpc._server._RPCState object at 0x10d733e80>, <bound method ...
+             │    │   └ <concurrent.futures.thread._WorkItem object at 0x10d733af0>
+             │    └ <function _unary_response_in_pool at 0x10d731700>
+             └ <concurrent.futures.thread._WorkItem object at 0x10d733af0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/grpc/_server.py", line 561, in _unary_response_in_pool
+    response, proceed = _call_behavior(rpc_event, state, behavior,
+                        │              │          │      └ <bound method UserServicer.GetUserByMobile of <user_srv.handler.user.UserServicer object at 0x10d7121f0>>
+                        │              │          └ <grpc._server._RPCState object at 0x10d733e80>
+                        │              └ <grpc._cython.cygrpc.RequestCallEvent object at 0x10d73b130>
+                        └ <function _call_behavior at 0x10d731310>
+> File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           │        │         └ <grpc._server._Context object at 0x10d73e430>
+                           │        └ mobile: "18273172411"
+                           │          
+                           └ <bound method UserServicer.GetUserByMobile of <user_srv.handler.user.UserServicer object at 0x10d7121f0>>
+
+  File "/Users/jianxiyan/home/练习/go_python/mxshop/mxshop_srvs/user_srv/handler/user.py", line 73, in GetUserByMobile
+    user = User.get(User.mobile == request.mobile)
+           │    │   │    │         │       └ <field property 'MobileRequest.mobile'>
+           │    │   │    │         └ mobile: "18273172411"
+           │    │   │    │           
+           │    │   │    └ <peewee.FieldAccessor object at 0x10d67e460>
+           │    │   └ <Model: User>
+           │    └ <classmethod object at 0x10d65cb20>
+           └ <Model: User>
+
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 6438, in get
+    return sq.get()
+           │  └ <function BaseModelSelect.get at 0x10d667f70>
+           └ <peewee.ModelSelect object at 0x10d73e4f0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 6884, in get
+    return clone.execute(database)[0]
+           │     │       └ None
+           │     └ <function BaseQuery.execute at 0x10d62d430>
+           └ <peewee.ModelSelect object at 0x10d73e460>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+           │      └ <peewee.ModelSelect object at 0x10d73e460>
+           └ <function BaseQuery.execute at 0x10d62d3a0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+           │    └ <function SelectBase._execute at 0x10d62fb80>
+           └ <peewee.ModelSelect object at 0x10d73e460>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 2150, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelSelect object at 0x10d73e460>
+             │        └ <function Database.execute at 0x10d63fd30>
+             └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x10b998c10>
+           │    │           │    └ ['18273172411', 1, 0]
+           │    │           └ 'SELECT `t1`.`id`, `t1`.`mobile`, `t1`.`password`, `t1`.`nick_name`, `t1`.`head_url`, `t1`.`birthday`, `t1`.`address`, `t1`.`...
+           │    └ <function ReconnectMixin.execute_sql at 0x10d6f3280>
+           └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/playhouse/shortcuts.py", line 216, in execute_sql
+    raise exc
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/playhouse/shortcuts.py", line 212, in execute_sql
+    return super(ReconnectMixin, self).execute_sql(sql, params, commit)
+                 │               │                 │    │       └ <object object at 0x10b998c10>
+                 │               │                 │    └ ['18273172411', 1, 0]
+                 │               │                 └ 'SELECT `t1`.`id`, `t1`.`mobile`, `t1`.`password`, `t1`.`nick_name`, `t1`.`head_url`, `t1`.`birthday`, `t1`.`address`, `t1`.`...
+                 │               └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+                 └ <class 'playhouse.shortcuts.ReconnectMixin'>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 3142, in execute_sql
+    cursor = self.cursor(commit)
+             │    │      └ True
+             │    └ <function Database.cursor at 0x10d63fc10>
+             └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 3126, in cursor
+    self.connect()
+    │    └ <function PooledDatabase.connect at 0x10d6739d0>
+    └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/playhouse/pool.py", line 109, in connect
+    return super(PooledDatabase, self).connect(reuse_if_open)
+                 │               │             └ False
+                 │               └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+                 └ <class 'playhouse.pool.PooledDatabase'>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 3080, in connect
+    self._state.set_connection(self._connect())
+    │    │      │              │    └ <function PooledDatabase._connect at 0x10d673a60>
+    │    │      │              └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+    │    │      └ <function _ConnectionState.set_connection at 0x10d63f0d0>
+    │    └ <peewee._ConnectionLocal object at 0x10d691520>
+    └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/playhouse/pool.py", line 156, in _connect
+    conn = super(PooledDatabase, self)._connect()
+                 │               └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+                 └ <class 'playhouse.pool.PooledDatabase'>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/peewee.py", line 3982, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+           │     │          │    │           │    └ {'charset': 'utf8', 'sql_mode': 'PIPES_AS_CONCAT', 'use_unicode': True, 'host': '127.0.0.1', 'port': 3306, 'user': 'root', 'p...
+           │     │          │    │           └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+           │     │          │    └ 'mxshop_user_srv'
+           │     │          └ <user_srv.settings.settings.ReconnectMysqlDatabase object at 0x10d33c6a0>
+           │     └ <class 'pymysql.connections.Connection'>
+           └ <module 'pymysql' from '/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/__init__.py'>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x10d60d160>
+    └ <pymysql.connections.Connection object at 0x10d73e520>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+    │    └ <function Connection._request_authentication at 0x10d60d5e0>
+    └ <pymysql.connections.Connection object at 0x10d73e520>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/connections.py", line 932, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+                  │     │                          │     └ <pymysql.protocol.MysqlPacket object at 0x10d759070>
+                  │     │                          └ <pymysql.connections.Connection object at 0x10d73e520>
+                  │     └ <function caching_sha2_password_auth at 0x10d5be430>
+                  └ <module 'pymysql._auth' from '/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/_auth.py'>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/_auth.py", line 265, in caching_sha2_password_auth
+    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
+           │                │    │         │    │     │    └ b'-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsB10o8AO9ihnc08wpJlM\n+zwCtziwuOnpNv/6N6kS0Qj4Ex5si...
+           │                │    │         │    │     └ <pymysql.connections.Connection object at 0x10d73e520>
+           │                │    │         │    └ b'\x0e r\x1eB\x1eryGmm\x17\x14\t\x10|\x03[/w'
+           │                │    │         └ <pymysql.connections.Connection object at 0x10d73e520>
+           │                │    └ b'jianxiyan.'
+           │                └ <pymysql.connections.Connection object at 0x10d73e520>
+           └ <function sha2_rsa_encrypt at 0x10d5be280>
+  File "/Users/jianxiyan/anaconda3/envs/mxshop_srvs/lib/python3.8/site-packages/pymysql/_auth.py", line 143, in sha2_rsa_encrypt
+    raise RuntimeError(
+
+RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2021-07-24 21:23:12.907 | INFO     | __main__:on_exit:20 - 注销成功3224d3f0-ec65-11eb-b50c-acde48001122
