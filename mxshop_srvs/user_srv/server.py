@@ -34,7 +34,7 @@ def serve():
     parser.add_argument("--ip",
                         nargs="?",
                         type=str,
-                        default="192.168.0.103",
+                        default="0.0.0.0",
                         help="binding ip"
                         )
     parser.add_argument("--port",
@@ -90,4 +90,5 @@ def serve():
 
 if __name__ == '__main__':
     # logger.basicConfig()
+    # settings.client.add_config_watcher(settings.NACOS["DataId"], settings.NACOS["Group"], settings.update_cfg)
     serve()
